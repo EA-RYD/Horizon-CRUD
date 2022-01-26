@@ -1,0 +1,92 @@
+/*---------------logo---------------*/
+.logo {
+    background-color: var(--main_clr);
+    border-radius: 0%;
+    border: 0;
+    display: grid;
+    grid-area: logo;
+    grid-template-columns: repeat(3,auto);
+    /* grid-template-areas: "left mid right";*/
+  }
+  .sun {
+    grid-area: mid;
+    border-radius: 50%;
+    box-shadow: 0 0 10px orange,
+                  0 0 60px orange,
+                  0 0 200px yellow,
+                  inset 0 0 80px yellow;
+    background-color: rgb(253, 184, 19);
+    height: 30px;
+    width: 30px;
+    
+    align-self: center;
+    justify-self: center;
+    grid-row: 1;
+    grid-column: 2/3;
+  }
+  .left {
+    background-color:#362910;
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+    content: "";
+    border-radius: 0px 150px 150px 0px;
+    width: 22px;
+    height: 44px;
+    grid-column: 1/3;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  .right {
+    background-color: #362910;
+    border-style:solid;
+    border-width: 1px;
+    border-color: white;
+    content: "";
+    border-radius: 150px 0 0 150px;
+    width: 22px;
+    height: 44px;
+    grid-column: 2/4;
+    grid-row: 1;
+    align-self: center;
+    justify-self: center;
+  }
+  .logo:hover {
+    box-shadow: 0 0 0px black,
+    0 0 1px  black,
+    0 0 1px  black;
+    border-style: hidden;
+    background-color: rgba(37, 88, 190, 0.651);;
+    cursor:pointer;
+    scale: 1.05;
+  }
+  /*
+  .sun:hover {
+    box-shadow: 0 0 20px orange,
+                  0 0 120px orange,
+                  0 0 400px yellow,
+                  inset 0 0 160px yellow;
+  }
+  .left:hover {
+    box-shadow: 0 0 0px black,
+    0 0 1px  black,
+    0 0 1px  black;
+    border-style: hidden;
+  }
+  .right:hover {
+    box-shadow: 0 0 0px black,
+                  0 0 1px  black,
+                  0 0 1px  black;
+    border-style: hidden;
+  }
+  */
+  @media (max-width:1300px) {
+      .left {
+        opacity: 0;
+      }
+      .right {
+          opacity: 0;
+      }
+      
+  }
